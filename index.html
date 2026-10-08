@@ -1,0 +1,1989 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags & SEO -->
+  <title>Маленький гений и герой: талант есть у каждого | Образовательный проект 8 класса</title>
+  <meta name="title" content="Маленький гений и герой: талант есть у каждого | Образовательный проект 8 класса">
+  <meta name="description" content="Современный исследовательский образовательный проект для 8 класса по русскому языку и обществознанию: природа таланта, классификация 10 видов способностей, профориентация, интерактивный тест из 15 вопросов, 3D-модель потенциала и связь таланта с повседневным героизмом.">
+  <meta name="keywords" content="талант есть у каждого, маленький гений и герой, проект по русскому языку 8 класс, виды талантов, способности и навыки, тест сильные стороны, профориентация школьников, героизм и талант, Говард Гарднер, самооценка способностей, 3D образование">
+  <meta name="author" content="Ученик 8 класса • Исследовательский проект">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://type-0713.github.io/BSB/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="favicon.svg">
+
+  <!-- Theme Colors -->
+  <meta name="theme-color" content="#0a0d14" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f8fafc" media="(prefers-color-scheme: light)">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://type-0713.github.io/BSB/">
+  <meta property="og:title" content="Маленький гений и герой: талант есть у каждого">
+  <meta property="og:description" content="Интерактивный образовательный сайт: исследование природы таланта, тест сильных сторон, 3D-модель способностей и практическое руководство для школьников.">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="Гений и Герой • 8 класс">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://type-0713.github.io/BSB/">
+  <meta property="twitter:title" content="Маленький гений и герой: талант есть у каждого">
+  <meta property="twitter:description" content="Образовательный исследовательский портал для 8 класса. Интерактивный тест из 15 вопросов, 3D-модель и матрица профессий.">
+
+  <!-- Structured Data (JSON-LD) for Search Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalWebSite",
+    "name": "Маленький гений и герой: талант есть у каждого",
+    "url": "https://type-0713.github.io/BSB/",
+    "description": "Школьный исследовательский образовательный проект по русскому языку о природе таланта, способностях, развитии и героизме.",
+    "inLanguage": "ru",
+    "educationalLevel": "8 класс",
+    "audience": {
+      "@type": "EducationalAudience",
+      "educationalRole": "student"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Ученик 8 класса"
+    },
+    "about": [
+      "Развитие способностей человека",
+      "Психология одаренности",
+      "Связь таланта и героизма",
+      "Профориентация подростков"
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts: Inter, Playfair Display & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Three.js for 3D interactive talent constellation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+  <!-- Reading Progress Bar -->
+  <div id="scrollProgressBar" class="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      <a href="#hero" class="brand-logo" aria-label="На главную">
+        <span class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-title">Гений и Герой</span>
+          <span class="brand-badge">8 класс • Проект</span>
+        </span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Основная навигация">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Главная</a></li>
+          <li><a href="#about" class="nav-link">О таланте</a></li>
+          <li><a href="#process" class="nav-link">Формирование</a></li>
+          <li><a href="#types" class="nav-link">Виды</a></li>
+          <li><a href="#people" class="nav-link">Люди</a></li>
+          <li><a href="#quiz" class="nav-link nav-highlight">Тест способностей</a></li>
+          <li><a href="#careers" class="nav-link">Профессии</a></li>
+          <li><a href="#development" class="nav-link">Развитие</a></li>
+          <li><a href="#myths" class="nav-link">Мифы</a></li>
+          <li><a href="#heroism" class="nav-link">Героизм</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Bookmark / Saved sections drawer trigger -->
+        <button id="bookmarkButton" class="action-btn icon-btn" title="Сохранённые разделы" aria-label="Открыть закладки">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+          </svg>
+          <span class="bookmark-badge" id="bookmarkCount">0</span>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button id="themeToggle" class="action-btn icon-btn" title="Сменить тему оформления" aria-label="Переключить тему">
+          <span class="theme-icon light-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </span>
+          <span class="theme-icon dark-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="hamburgerBtn" class="hamburger-btn" aria-label="Открыть мобильное меню" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Bookmarks Modal / Flyout Drawer -->
+  <div id="bookmarksModal" class="bookmarks-drawer" aria-hidden="true">
+    <div class="bookmarks-drawer-header">
+      <div class="bookmarks-title-row">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+        </svg>
+        <h3>Избранные разделы</h3>
+      </div>
+      <button id="closeBookmarksBtn" class="close-btn" aria-label="Закрыть закладки">&times;</button>
+    </div>
+    <div class="bookmarks-drawer-body" id="bookmarksList">
+      <p class="empty-bookmarks">Вы ещё не добавили разделы в закладки. Нажмите на иконку закладки в любом разделе, чтобы сохранить его.</p>
+    </div>
+  </div>
+  <div id="modalBackdrop" class="modal-backdrop"></div>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- 1. HERO SECTION -->
+    <section id="hero" class="hero-section section-target" data-section-name="Главная">
+      <div class="hero-bg-glow"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span class="pulse-dot"></span>
+            Творческий исследовательский проект по русскому языку
+          </div>
+          <h1 class="hero-title">
+            Талант есть <span class="gradient-text">у каждого</span>
+          </h1>
+          <p class="hero-subtitle">
+            «Но не каждый успевает его заметить.»
+          </p>
+          <p class="hero-desc">
+            Каждый человек обладает уникальным набором задатков и способностей. Истинный талант — это не магия и не слепая случайность, а искра, которую необходимо вовремя распознать, взрастить через труд и обратить на созидание и помощь обществу.
+          </p>
+          <div class="hero-buttons">
+            <a href="#about" class="btn btn-primary">
+              <span>Узнать больше</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#quiz" class="btn btn-secondary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="12 8 8 12 12 16 12 8"></polygon></svg>
+              <span>Пройти тест (15 вопросов)</span>
+            </a>
+          </div>
+
+          <!-- Project Key Highlights -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">10</span>
+              <span class="stat-label">Видов таланта</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">15</span>
+              <span class="stat-label">Вопросов теста</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Научный подход</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3D Interactive Canvas Container -->
+        <div class="hero-visual">
+          <div class="interactive-3d-card">
+            <div class="card-3d-header">
+              <div class="card-3d-title">
+                <span class="card-3d-indicator"></span>
+                <span>Интерактивная 3D-модель: «Сфера Потенциала»</span>
+              </div>
+              <div class="card-3d-controls">
+                <button id="toggleAutoRotate" class="btn-sm" title="Автоматическое вращение">Авто: Вкл</button>
+                <button id="toggleWireframe" class="btn-sm" title="Переключить каркас">Структура</button>
+                <button id="reset3DCamera" class="btn-sm" title="Сбросить угол обзора">Сброс</button>
+              </div>
+            </div>
+            <div id="canvas3dContainer" class="canvas-3d-container">
+              <!-- Three.js Canvas injected here -->
+              <div id="nodeInfoOverlay" class="node-info-overlay">Узлы символизируют грани способностей</div>
+            </div>
+            <div class="card-3d-footer">
+              <span class="hint-text">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 15l6 6m-11-4a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"></path></svg>
+                Вращайте модель курсором или касанием. Сфера символизирует целостность личности, а светящиеся узлы — 10 граней одарённости.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Bookmark button for this section -->
+      <button class="section-bookmark-btn" data-target="hero" title="Сохранить раздел в избранное" aria-label="Сохранить раздел Главная">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+      </button>
+    </section>
+
+    <!-- 2. ЧТО ТАКОЕ ТАЛАНТ? -->
+    <section id="about" class="section section-target" data-section-name="Что такое талант?">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Раздел 01 • Теоретическая основа</div>
+          <h2 class="section-title">Что такое талант?</h2>
+          <p class="section-subtitle">
+            Серьёзный разговор о фундаментальных понятиях: как не путать врождённые задатки с упорным мастерством.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card definition-card">
+            <div class="card-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4M12 8h.01"/></svg>
+            </div>
+            <h3>Сущность понятия</h3>
+            <p>
+              <strong>Талант</strong> (греч. <em>talanton</em> — первоначально высшая весовая и денежная единица) — это высокий уровень развития способностей, позволяющий человеку быстро, глубоко и нестандартно решать сложные задачи, создавая новые общественно значимые ценности.
+            </p>
+            <p class="card-note">
+              С античных времен слово обрело метафорический смысл благодаря притче о зарытом таланте: истинная ценность человеческой жизни — не спрятать свои дарования, а приумножить их.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <div class="card-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M12 2v20"/></svg>
+            </div>
+            <h3>Талант vs Способность</h3>
+            <p>
+              <strong>Способность</strong> — это индивидуально-психологическое свойство, которое делает человека пригодным для успешного освоения какой-либо деятельности (например, хорошая зрительная память или чувство ритма).
+            </p>
+            <p>
+              <strong>Талант</strong> — это уже гармоничный сплав нескольких способностей, достигших расцвета, когда человек не просто повторяет заученное, а проявляет созидательную инициативу и индивидуальный почерк.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <div class="card-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3>Талант vs Навык</h3>
+            <p>
+              <strong>Навык</strong> — это автоматизированное действие, формируемое многократным повторением (например, слепая печать на клавиатуре или правильное держание смычка). Навык можно развить упорной тренировкой практически у каждого.
+            </p>
+            <p>
+              Навык без таланта дает добротное ремесло. Но и талант без навыка остается беспомощным и непроявленным. Настоящий результат возникает лишь при их союзе.
+            </p>
+          </div>
+
+          <div class="about-card highlight-card">
+            <div class="card-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+            </div>
+            <h3>Почему талант не всегда заметен в детстве?</h3>
+            <ul class="styled-list">
+              <li><strong>Отсутствие подходящей среды:</strong> если человек никогда не пробовал программировать или писать музыку, его задатки спят.</li>
+              <li><strong>Стереотип ранней одаренности:</strong> общество привыкло ждать «вундеркиндов», однако многие таланты требуют зрелости мышления (например, лидерство или научный синтез).</li>
+              <li><strong>Скрытый темп созревания:</strong> структуры мозга формируются индивидуально, и глубокие аналитические способности часто раскрываются именно в подростковом возрасте (13–16 лет).</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Comparative Table -->
+        <div class="table-container-wrap">
+          <div class="table-header-bar">
+            <h3>Сравнительный анализ: Талант | Способность | Навык</h3>
+            <span class="table-tag">Научный ориентир</span>
+          </div>
+          <div class="table-responsive">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Критерий</th>
+                  <th>Способность</th>
+                  <th>Талант</th>
+                  <th>Навык</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="table-label">Происхождение</td>
+                  <td>Базируется на природных задатках нервной системы</td>
+                  <td>Синергия врождённых задатков, глубокого интереса и труда</td>
+                  <td>Приобретается исключительно тренировкой и практикой</td>
+                </tr>
+                <tr>
+                  <td class="table-label">Степень оригинальности</td>
+                  <td>Средняя: позволяет качественно повторить образец</td>
+                  <td>Высокая: рождает новые идеи, стили и методы</td>
+                  <td>Низкая: стандартизированное выполнение алгоритма</td>
+                </tr>
+                <tr>
+                  <td class="table-label">Скорость освоения</td>
+                  <td>Выше среднего при наличии предрасположенности</td>
+                  <td>Стремительное схватывание сути и поиск нестандартных путей</td>
+                  <td>Зависит от времени, повторений и методики обучения</td>
+                </tr>
+                <tr>
+                  <td class="table-label">Роль упражнений</td>
+                  <td>Необходимы для поддержания формы</td>
+                  <td>Критически важны: без практики угасает или остаётся фантазией</td>
+                  <td>Основа существования навыка (автоматизация)</td>
+                </tr>
+                <tr>
+                  <td class="table-label">Пример (живопись)</td>
+                  <td>Тонкое различение оттенков и пропорций глазами</td>
+                  <td>Создание уникального художественного мира картины</td>
+                  <td>Умение ровно наносить грунт и держать кисть</td>
+                </tr>
+                <tr>
+                  <td class="table-label">Пример (программирование)</td>
+                  <td>Легкое понимание логических схем и условий</td>
+                  <td>Проектирование элегантной архитектуры сложного проекта</td>
+                  <td>Быстрый набор синтаксиса языка без опечаток</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <button class="section-bookmark-btn" data-target="about" title="Сохранить раздел в избранное" aria-label="Сохранить раздел Что такое талант?">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+      </button>
+    </section>
+
+    <!-- 3. КАК ФОРМИРУЕТСЯ ТАЛАНТ? -->
+    <section id="process" class="section section-alt section-target" data-section-name="Как формируется талант?">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Раздел 02 • Механизм развития</div>
+          <h2 class="section-title">Как формируется талант?</h2>
+          <p class="section-subtitle">
+            Путь от едва уловимого любопытства до признанного результата — это системный процесс из 6 взаимосвязанных этапов.
+          </p>
+        </div>
+
+        <div class="process-pipeline">
+          <div class="process-step" data-step="1">
+            <div class="step-badge">Этап 1</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            </div>
+            <h3 class="step-title">Интерес</h3>
+            <p class="step-desc">
+              Всё начинается с непроизвольного внимания и эмоционального отклика. Предмет или занятие вызывают естественное любопытство и желание изучать его без внешнего принуждения.
+            </p>
+            <div class="step-footer">
+              <span class="step-tip">Фактор успеха: свободная проба сил</span>
+            </div>
+          </div>
+
+          <div class="process-arrow" aria-hidden="true">→</div>
+
+          <div class="process-step" data-step="2">
+            <div class="step-badge">Этап 2</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+            </div>
+            <h3 class="step-title">Практика</h3>
+            <p class="step-desc">
+              Переход от пассивного наблюдения к действию. Первые регулярные попытки: написание строк кода, игра гамм, черчение схем, первые тренировки или сочинения.
+            </p>
+            <div class="step-footer">
+              <span class="step-tip">Фактор успеха: регулярность и фокус</span>
+            </div>
+          </div>
+
+          <div class="process-arrow" aria-hidden="true">→</div>
+
+          <div class="process-step" data-step="3">
+            <div class="step-badge">Этап 3</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </div>
+            <h3 class="step-title">Ошибки</h3>
+            <p class="step-desc">
+              Неизбежный этап столкновения с трудностями. Ошибки здесь — не показатель бездарности, а важнейшая диагностическая карта того, что именно нужно скорректировать.
+            </p>
+            <div class="step-footer">
+              <span class="step-tip">Фактор успеха: психологическая стойкость</span>
+            </div>
+          </div>
+
+          <div class="process-arrow" aria-hidden="true">→</div>
+
+          <div class="process-step" data-step="4">
+            <div class="step-badge">Этап 4</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+            </div>
+            <h3 class="step-title">Опыт</h3>
+            <p class="step-desc">
+              Накопление критической массы практических решений. Мозг начинает распознавать паттерны, действия становятся осознанными, появляется профессиональная интуиция.
+            </p>
+            <div class="step-footer">
+              <span class="step-tip">Фактор успеха: рефлексия и анализ</span>
+            </div>
+          </div>
+
+          <div class="process-arrow" aria-hidden="true">→</div>
+
+          <div class="process-step" data-step="5">
+            <div class="step-badge">Этап 5</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+            </div>
+            <h3 class="step-title">Развитие</h3>
+            <p class="step-desc">
+              Выход за рамки базовых правил и шаблонов. Человек начинает экспериментировать, сочетать техники из смежных областей, формировать собственный авторский почерк.
+            </p>
+            <div class="step-footer">
+              <span class="step-tip">Фактор успеха: смелость мысли</span>
+            </div>
+          </div>
+
+          <div class="process-arrow" aria-hidden="true">→</div>
+
+          <div class="process-step" data-step="6">
+            <div class="step-badge">Этап 6</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </div>
+            <h3 class="step-title">Результат</h3>
+            <p class="step-desc">
+              Создание ценности: победа на олимпиаде, написанный программный продукт, спасённая жизнь, вдохновляющая картина или реализованный социальный проект.
+            </p>
+            <div class="step-footer">
+              <span class="step-tip">Фактор успеха: польза для окружающих</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pipeline-summary-box">
+          <div class="summary-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--accent-primary)" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+          </div>
+          <div class="summary-text">
+            <strong>Ключевой вывод:</strong> талант не сваливается с неба в готовом виде на 6-м этапе. Он выковывается именно в моменты преодоления ошибок между 2-м и 4-м этапами.
+          </div>
+        </div>
+      </div>
+      <button class="section-bookmark-btn" data-target="process" title="Сохранить раздел в избранное" aria-label="Сохранить раздел Как формируется талант?">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+      </button>
+    </section>
+
+    <!-- 4. ВИДЫ ТАЛАНТОВ -->
+    <section id="types" class="section section-target" data-section-name="Виды талантов">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Раздел 03 • Классификация способностей</div>
+          <h2 class="section-title">Виды талантов</h2>
+          <p class="section-subtitle">
+            Современная психология выделяет множество модальностей человеческого потенциала. У каждого человека доминирует индивидуальный ансамбль способностей.
+          </p>
+        </div>
+
+        <!-- Filter and Search Bar -->
+        <div class="talents-filter-bar">
+          <div class="search-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" id="talentSearchInput" placeholder="Поиск по виду таланта или ключевому слову..." aria-label="Поиск по видам таланта">
+            <button id="clearSearchBtn" class="clear-search-btn" title="Очистить поиск" style="display: none;">&times;</button>
+          </div>
+          <div class="filter-pills" id="talentCategoryFilters">
+            <button class="pill-btn active" data-category="all">Все (10)</button>
+            <button class="pill-btn" data-category="stem">Точные и технические</button>
+            <button class="pill-btn" data-category="creative">Творческие и искусство</button>
+            <button class="pill-btn" data-category="social">Люди и коммуникация</button>
+            <button class="pill-btn" data-category="physical">Действие и спорт</button>
+          </div>
+        </div>
+
+        <!-- Talent Cards Grid (10 cards) -->
+        <div class="talents-grid" id="talentsCardsContainer">
+
+          <!-- 1. Интеллектуальный -->
+          <article class="talent-card" data-category="stem" data-talent="интеллектуальный логика мышление память аналитика">
+            <div class="card-top">
+              <div class="talent-icon-badge color-blue">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-2.04z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-2.04z"/></svg>
+              </div>
+              <span class="card-num">01</span>
+            </div>
+            <h3 class="talent-title">Интеллектуальный</h3>
+            <p class="talent-desc">
+              Способность глубоко анализировать причинно-следственные связи, быстро структурировать информацию, оперировать абстрактными категориями и находить неочевидные закономерности.
+            </p>
+            <div class="talent-details">
+              <div class="detail-block">
+                <span class="detail-label">Как проявляется:</span>
+                <p>Интерес к сложным логическим головоломкам, стратегии в играх, любовь к систематизации и аргументированным спорам.</p>
+              </div>
+              <div class="detail-block">
+                <span class="detail-label">Примеры деятельности:</span>
+                <p>Математика, аналитика данных, шахматы, логистика, системное проектирование.</p>
+              </div>
+              <div class="detail-block">
+                <span class="detail-label">Что развивать:</span>
+                <p>Критическое мышление, теорию вероятностей, умение формулировать строгие гипотезы.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. Творческий -->
+          <article class="talent-card" data-category="creative" data-talent="творческий воображение дизайн искусство визуальный">
+            <div class="card-top">
+              <div class="talent-icon-badge color-purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+              </div>
+              <span class="card-num">02</span>
+            </div>
+            <h3 class="talent-title">Творческий</h3>
+            <p class="talent-desc">
+              Богатое образное воображение, способность видеть мир под неожиданным ракурсом, преобразовывать внутренние переживания и идеи в выразительные визуальные или концептуальные формы.
+            </p>
+            <div class="talent-details">
+              <div class="detail-block">
+                <span class="detail-label">Как проявляется:</span>
+                <p>Скетчи на полях тетрадей, чутье гармонии цветов и композиции, генерация необычных метафор и концептов.</p>
+              </div>
+              <div class="detail-block">
+                <span class="detail-label">Примеры деятельности:</span>
+                <p>Графический дизайн, концепт-арт, анимация, архитектура, режиссура, декорирование.</p>
+              </div>
+              <div class="detail-block">
+                <span class="detail-label">Что развивать:</span>
+                <p>Насмотренность, владение графическими инструментами, знание композиции и колористики.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. Технический -->
+          <article class="talent-card" data-category="stem" data-talent="технический инженерия механизмы программирование алгоритмы">
+            <div class="card-top">
+              <div class="talent-icon-badge color-cyan">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+              </div>
+              <span class="card-num">03</span>
+            </div>
+            <h3 class="talent-title">Технический</h3>
+            <p class="talent-desc">
+              Врожденное понимание механизмов, схем и алгоритмов. Человек чувствует, как устроена система изнутри, мгновенно разбирается в функционале техники и находит способы ее модернизации.
+            </p>
+            <div class="talent-details">
+              <div class="detail-block">
+                <span class="detail-label">Как проявляется:</span>
+                <p>Сборка и разборка устройств, интерес к кодингу, микроконтроллерам, робототехнике, черчению.</p>
+              </div>
+              <div class="detail-block">
+                <span class="detail-label">Примеры деятельности:</span>
+                <p>Разработка ПО, микроэлектроника, робототехника, мехатроника, сетевая инженерия.</p>
+              </div>
+              <div class="detail-block">
+                <span class="detail-label">Что развивать:</span>
+                <p>Алгоритмическое мышление, базовые языки программирования, работу с 3D CAD и паяльником.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. Музыкальный -->
+          <article class="talent-card" data-category="creative" data-talent="музыкальный слух ритм гармония мелодия звук">
+            <div class="card-top">
+              <div class="talent-icon-badge color-orange">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+              </div>
+              <span class="card-num">04</span>
+            </div>
+            <h3 class="talent-title">Музыкальный</h3>
+            <p class="talent-desc">
+              Тонкая чувствительность к высоте звука, тембру, ритмическому рисунку и эмоциональной окраске акустического пространства. Способность слышать внутреннюю гармонию.
+            </p>
+            <div class="talent-details">
+              <div class="detail-block">
+                <span class="detail-label">Как проявляется:</span>
+                <p>Точное воспроизведение мелодий на слух, чувство темпа, эмоциональная чуткость к аудиотрекам.</p>
+              </div>
+              <div class="detail-block">
+                <span class="detail-label">Примеры деятельности:</span>
+                <p>Исполнительство, композиция, саунд-дизайн для кино и видеоигр, сведение и мастеринг.</p>
+              </div>
+              <div class="detail-block">
+                <span class="detail-label">Что развивать:</span>
+                <p>Сольфеджио, владение инструментами, работу в DAW (цифровых звуковых станциях).</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. Спортивный -->
+          <article class="talent-card" data-category="physical" data-talent="спортивный координация ловкость выносливость моторика тело">
+            <div class="card-top">
+              <div class="talent-icon-badge color-green">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+              </div>
+              <span class="card-num">05</span>
+            </div>
+            <h3 class="talent-title">Спортивный</h3>
+            <p class="talent-desc">
+              Высокая телесно-кинестетическая координация, мышечная память, чувство равновесия, ловкость и выносливость. Мозг с филигранной точностью управляет телом в пространстве и времени.
+            </p>
+            <div class="talent-details">
+              <div class="detail-block">
+                <span class="detail-label">Как проявляется:</span>
+                <p>Быстрое освоение сложных двигательных связок, реакция на быстролетящий мяч, физическая собранность.</p>
+              </div>
+              <div class="detail-block">
+                <span class="detail-label">Примеры деятельности:</span>
+                <p>Командный спорт, легкая атлетика, единоборства, спортивная гимнастика, танцы.</p>
+              </div>
+              <div class="detail-block">
+                <span class="detail-label">Что развивать:</span>
+                <p>Дисциплину режима, тактическое спортивное мышление, кардиовыносливость, растяжку.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. Коммуникативный -->
+          <article class="talent-card" data-category="social" data-talent="коммуникативный общение эмпатия переговоры убеждение">
+            <div class="card-top">
+              <div class="talent-icon-badge color-teal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              </div>
+              <span class="card-num">06</span>
+            </div>
+            <h3 class="talent-title">Коммуникативный</h3>
+            <p class="talent-desc">
+              Искусство слушать, чувствовать эмоции собеседника, находить общий язык с абсолютно разными людьми, мягко сглаживать конфликтные ситуации и выстраивать доверительные отношения.
+            </p>
+            <div class="talent-details">
+              <div class="detail-block">
+                <span class="detail-label">Как проявляется:</span>
+                <p>Умение расположить к себе незнакомца, дар примирять поссорившихся друзей, убедительная речь.</p>
+              </div>
+              <div class="detail-block">
+                <span class="detail-label">Примеры деятельности:</span>
+                <p>Журналистика, преподавание, дипломатия, психологическое консультирование, связи с общественностью.</p>
+              </div>
+              <div class="detail-block">
+                <span class="detail-label">Что развивать:</span>
+                <p>Эмоциональный интеллект, ораторское мастерство, техники активного слушания.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7. Лидерский -->
+          <article class="talent-card" data-category="social" data-talent="лидерский организация руководство стратегия команда мотивация">
+            <div class="card-top">
+              <div class="talent-icon-badge color-gold">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+              </div>
+              <span class="card-num">07</span>
+            </div>
+            <h3 class="talent-title">Лидерский</h3>
+            <p class="talent-desc">
+              Умение вдохновлять окружающих большой целью, брать на себя ответственность в условиях неопределенности, распределять роли в команде и вести проект к финишу.
+            </p>
+            <div class="talent-details">
+              <div class="detail-block">
+                <span class="detail-label">Как проявляется:</span>
+                <p>Инициатива в школьных мероприятиях, способность сплотить класс вокруг общей идеи, смелость решений.</p>
+              </div>
+              <div class="detail-block">
+                <span class="detail-label">Примеры деятельности:</span>
+                <p>Управление проектами, предпринимательство, общественные движения, кризисный менеджмент.</p>
+              </div>
+              <div class="detail-block">
+                <span class="detail-label">Что развивать:</span>
+                <p>Стратегическое планирование, делегирование, стрессоустойчивость и этику ответственности.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8. Социальный -->
+          <article class="talent-card" data-category="social" data-talent="социальный волонтерство помощь сострадание медицина общество">
+            <div class="card-top">
+              <div class="talent-icon-badge color-pink">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+              </div>
+              <span class="card-num">08</span>
+            </div>
+            <h3 class="talent-title">Социальный</h3>
+            <p class="talent-desc">
+              Глубокая внутренняя потребность бескорыстно поддерживать других, заботиться о слабых, защищать экологию и улучшать среду вокруг себя. Высокая этическая планка и гражданская чуткость.
+            </p>
+            <div class="talent-details">
+              <div class="detail-block">
+                <span class="detail-label">Как проявляется:</span>
+                <p>Участие в благотворительных акциях, забота о бездомных животных, защита справедливости в коллективе.</p>
+              </div>
+              <div class="detail-block">
+                <span class="detail-label">Примеры деятельности:</span>
+                <p>Медицина, волонтёрские фонды, инклюзивное образование, экологические инициативы.</p>
+              </div>
+              <div class="detail-block">
+                <span class="detail-label">Что развивать:</span>
+                <p>Навыки первой помощи, проектный менеджмент в НКО, навыки психологической саморегуляции.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 9. Литературный -->
+          <article class="talent-card" data-category="creative" data-talent="литературный слово текст писатель рассказ поэзия">
+            <div class="card-top">
+              <div class="talent-icon-badge color-amber">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+              </div>
+              <span class="card-num">09</span>
+            </div>
+            <h3 class="talent-title">Литературный</h3>
+            <p class="talent-desc">
+              Врожденная чувствительность к родному языку, красоте фразы, ритму текста и драматургии повествования. Способность упаковывать сложные мысли и переживания в увлекательные сюжеты.
+            </p>
+            <div class="talent-details">
+              <div class="detail-block">
+                <span class="detail-label">Как проявляется:</span>
+                <p>Легкость в написании сочинений, ведение личных рассказов/блогов, тонкий словарный запас и юмор.</p>
+              </div>
+              <div class="detail-block">
+                <span class="detail-label">Примеры деятельности:</span>
+                <p>Художественная литература, сценаристика фильмов и игр, редактура, копирайтинг смыслов.</p>
+              </div>
+              <div class="detail-block">
+                <span class="detail-label">Что развивать:</span>
+                <p>Чтение классики и нон-фикшн, стилистический анализ, законы сторителлинга и драматургии.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 10. Научно-исследовательский -->
+          <article class="talent-card" data-category="stem" data-talent="научный исследовательский гипотезы эксперименты открытия факты">
+            <div class="card-top">
+              <div class="talent-icon-badge color-indigo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 2v7.31M14 2v7.31M8.5 2h7M14 9.3a6.5 6.5 0 1 1-4 0"/></svg>
+              </div>
+              <span class="card-num">10</span>
+            </div>
+            <h3 class="talent-title">Научно-исследовательский</h3>
+            <p class="talent-desc">
+              Неутомимая жажда добраться до первопричины вещей. Умение выдвигать смелые гипотезы, ставить чистые эксперименты, сомневаться в авторитетах и опираться исключительно на проверяемые факты.
+            </p>
+            <div class="talent-details">
+              <div class="detail-block">
+                <span class="detail-label">Как проявляется:</span>
+                <p>Вопрос «Почему это работает именно так?», интерес к научпопу, микроскопам, физическим опытам.</p>
+              </div>
+              <div class="detail-block">
+                <span class="detail-label">Примеры деятельности:</span>
+                <p>Фундаментальная физика, генетика, астробиология, клинические исследования, Data Science.</p>
+              </div>
+              <div class="detail-block">
+                <span class="detail-label">Что развивать:</span>
+                <p>Методологию научного поиска, работу со статистикой, академический английский язык.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <button class="section-bookmark-btn" data-target="types" title="Сохранить раздел в избранное" aria-label="Сохранить раздел Виды талантов">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+      </button>
+    </section>
+
+    <!-- 5. ТАЛАНТЛИВЫЕ ЛЮДИ -->
+    <section id="people" class="section section-alt section-target" data-section-name="Талантливые люди">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Раздел 04 • Исторические ориентиры</div>
+          <h2 class="section-title">Талантливые люди</h2>
+          <p class="section-subtitle">
+            Этот раздел нужен исключительно для примеров. Великие имена доказывают: природный дар — это лишь стартовый импульс, а масштаб личности определяет титанический труд.
+          </p>
+          <div class="key-quote-banner">
+            <span class="quote-mark">«</span>
+            <p>Известные люди показывают, что талант становится сильнее благодаря развитию и труду.</p>
+            <span class="quote-mark">»</span>
+          </div>
+        </div>
+
+        <div class="people-grid">
+          <!-- Леонардо да Винчи -->
+          <div class="person-card">
+            <div class="person-header">
+              <div class="person-avatar-badge color-purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+              </div>
+              <div class="person-meta">
+                <h3 class="person-name">Леонардо да Винчи</h3>
+                <span class="person-era">1452–1519 • Универсальный гений эпохи Возрождения</span>
+              </div>
+            </div>
+            <div class="person-body">
+              <div class="person-trait">
+                <span class="trait-title">В чем проявлялся талант:</span>
+                <p>Беспрецедентная наблюдательность, синтез художественного видения и математического анализа, способность видеть анатомию и механику в движении.</p>
+              </div>
+              <div class="person-trait">
+                <span class="trait-title">Какую роль сыграл труд:</span>
+                <p>Свыше 7000 рукописных страниц чертежей. Лично препарировал более 30 тел для точности анатомических рисунков. Годами дорабатывал детали одного портрета.</p>
+              </div>
+              <div class="person-trait">
+                <span class="trait-title">Чего человек достиг:</span>
+                <p>Шедевры мировой живописи («Мона Лиза», «Тайная вечеря»), опередившие время концепты вертолёта, парашюта, гидротехнических систем.</p>
+              </div>
+              <div class="person-conclusion">
+                <strong>Вывод:</strong> широта интересов не мешает глубине, если подкреплена дотошным ежедневным трудом исследователя.
+              </div>
+            </div>
+          </div>
+
+          <!-- Моцарт -->
+          <div class="person-card">
+            <div class="person-header">
+              <div class="person-avatar-badge color-orange">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+              </div>
+              <div class="person-meta">
+                <h3 class="person-name">Вольфганг Амадей Моцарт</h3>
+                <span class="person-era">1756–1791 • Композитор-классик, новатор гармонии</span>
+              </div>
+            </div>
+            <div class="person-body">
+              <div class="person-trait">
+                <span class="trait-title">В чем проявлялся талант:</span>
+                <p>Абсолютный слух, феноменальная слуховая память (записал сложнейшее 9-голосное «Мизерере» Аллегри по памяти после одного прослушивания в Риме).</p>
+              </div>
+              <div class="person-trait">
+                <span class="trait-title">Какую роль сыграл труд:</span>
+                <p>Вопреки мифу о «легкости гения», Моцарт упражнялся на клавесине с 3 лет под строжайшей дисциплиной отца, проводя за инструментом по 6–8 часов ежедневно.</p>
+              </div>
+              <div class="person-trait">
+                <span class="trait-title">Чего человек достиг:</span>
+                <p>Более 600 бессмертных произведений: оперы «Свадьба Фигаро», «Дон Жуан», симфонии и монументальный «Реквием», определившие вектор классической музыки.</p>
+              </div>
+              <div class="person-conclusion">
+                <strong>Вывод:</strong> даже самый исключительный природный слух требует тысяч часов оттачивания техники гармонии.
+              </div>
+            </div>
+          </div>
+
+          <!-- Альберт Эйнштейн -->
+          <div class="person-card">
+            <div class="person-header">
+              <div class="person-avatar-badge color-indigo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"></circle><path d="M3 12h1m8-9v1m8 8h1m-9 8v1M5.6 5.6l.7.7m11.4 11.4l.7.7M5.6 18.4l.7-.7m11.4-11.4l.7-.7"/></svg>
+              </div>
+              <div class="person-meta">
+                <h3 class="person-name">Альберт Эйнштейн</h3>
+                <span class="person-era">1879–1955 • Физик-теоретик, лауреат Нобелевской премии</span>
+              </div>
+            </div>
+            <div class="person-body">
+              <div class="person-trait">
+                <span class="trait-title">В чем проявлялся талант:</span>
+                <p>Уникальное мысленное моделирование — представлял себя верхом на луче света. Способность усомниться в аксиомах, казавшихся незыблемыми более двух столетий.</p>
+              </div>
+              <div class="person-trait">
+                <span class="trait-title">Какую роль сыграл труд:</span>
+                <p>Годы монотонной службы в патентном бюро в Берне, сложнейшая математическая переподготовка вместе с Марселем Гроссманом для обуздания тензорного исчисления.</p>
+              </div>
+              <div class="person-trait">
+                <span class="trait-title">Чего человек достиг:</span>
+                <p>Специальная и общая теория относительности, формула E=mc², объяснение фотоэффекта, фундаментальный переворот в понимании пространства и времени.</p>
+              </div>
+              <div class="person-conclusion">
+                <strong>Вывод:</strong> детская непосредственность мышления в союзе со строгой математикой меняет понимание Вселенной.
+              </div>
+            </div>
+          </div>
+
+          <!-- Стив Джобс -->
+          <div class="person-card">
+            <div class="person-header">
+              <div class="person-avatar-badge color-cyan">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+              </div>
+              <div class="person-meta">
+                <h3 class="person-name">Стив Джобс</h3>
+                <span class="person-era">1955–2011 • Визионер цифровой эры и дизайна</span>
+              </div>
+            </div>
+            <div class="person-body">
+              <div class="person-trait">
+                <span class="trait-title">В чем проявлялся талант:</span>
+                <p>Синтез технологий и гуманитарных искусств, интуитивное понимание пользовательского опыта и безупречный вкус к промышленному дизайну и типографике.</p>
+              </div>
+              <div class="person-trait">
+                <span class="trait-title">Какую роль сыграл труд:</span>
+                <p>Преодоление тяжелейшего кризиса и увольнения из собственной компании, сотни репетиций презентаций до миллисекундной точности, перфекционизм к каждой детали.</p>
+              </div>
+              <div class="person-trait">
+                <span class="trait-title">Чего человек достиг:</span>
+                <p>Революция в шести отраслях: персональные компьютеры (Mac), цифровая анимация (Pixar), цифровая музыка (iPod), смартфоны (iPhone), планшеты (iPad) и экосистемы ПО.</p>
+              </div>
+              <div class="person-conclusion">
+                <strong>Вывод:</strong> упорство в отстаивании своего видения превращает инженерные схемы в произведения искусства.
+              </div>
+            </div>
+          </div>
+
+          <!-- Лионель Месси -->
+          <div class="person-card">
+            <div class="person-header">
+              <div class="person-avatar-badge color-green">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+              </div>
+              <div class="person-meta">
+                <h3 class="person-name">Лионель Месси</h3>
+                <span class="person-era">род. 1987 • Чемпион мира, легенда спорта</span>
+              </div>
+            </div>
+            <div class="person-body">
+              <div class="person-trait">
+                <span class="trait-title">В чем проявлялся талант:</span>
+                <p>Аномально низкий центр тяжести, мгновенное принятие решений на скорости, феноменальный дриблинг и видение свободных зон на поле за доли секунды.</p>
+              </div>
+              <div class="person-trait">
+                <span class="trait-title">Какую роль сыграл труд:</span>
+                <p>В детстве преодолел дефицит гормона роста через болезненные ежедневные инъекции. Десятилетия строжайшего спортивного режима, диеты и работы на тренировках.</p>
+              </div>
+              <div class="person-trait">
+                <span class="trait-title">Чего человек достиг:</span>
+                <p>Чемпион мира, рекордные 8 «Золотых мячей», десятки кубков и статус одного из величайших спортсменов в истории человечества.</p>
+              </div>
+              <div class="person-conclusion">
+                <strong>Вывод:</strong> природная предрасположенность без дисциплины и преодоления трудностей сломалась бы на первом же жизненном барьере.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="section-bookmark-btn" data-target="people" title="Сохранить раздел в избранное" aria-label="Сохранить раздел Талантливые люди">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+      </button>
+    </section>
+
+    <!-- 6. ИНТЕРАКТИВНЫЙ ТЕСТ: ОПРЕДЕЛИ СВОИ СИЛЬНЫЕ СТОРОНЫ -->
+    <section id="quiz" class="section section-target" data-section-name="Определи сильные стороны">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Раздел 05 • Интерактивная самооценка</div>
+          <h2 class="section-title">Определи свои сильные стороны</h2>
+          <p class="section-subtitle">
+            Серьёзный опросник из 15 вопросов, разработанный для выявления доминирующих векторов ваших интересов и склонностей.
+          </p>
+        </div>
+
+        <!-- Quiz Container Box -->
+        <div class="quiz-wrapper">
+          <!-- Quiz Disclaimer -->
+          <div class="quiz-disclaimer-banner">
+            <div class="disclaimer-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="var(--accent-amber)" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            </div>
+            <div class="disclaimer-text">
+              <strong>Важное примечание:</strong> Этот тест является образовательной самооценкой и не является профессиональной психологической диагностикой. Он предназначен для стимулирования размышлений о своих сильных сторонах и расширения кругозора. Результаты сохраняются только в вашем браузере (localStorage).
+            </div>
+          </div>
+
+          <!-- Active Quiz Screen -->
+          <div id="quizActiveScreen" class="quiz-active-screen">
+            <!-- Progress Bar -->
+            <div class="quiz-progress-row">
+              <div class="quiz-step-info">
+                <span>Вопрос <strong id="currentQuestionNum">1</strong> из <strong>15</strong></span>
+                <span id="quizPercentDone" class="quiz-percent-done">7%</span>
+              </div>
+              <div class="quiz-progress-track">
+                <div id="quizProgressBarFill" class="quiz-progress-fill" style="width: 6.66%;"></div>
+              </div>
+            </div>
+
+            <!-- Question Box -->
+            <div class="question-container">
+              <h3 id="questionTitle" class="question-title">Загрузка вопроса...</h3>
+              <p id="questionDescription" class="question-subtitle">Выберите один ответ, наиболее точно отражающий ваше поведение:</p>
+
+              <!-- Options List -->
+              <div id="quizOptionsList" class="quiz-options-list">
+                <!-- Dynamically rendered options -->
+              </div>
+            </div>
+
+            <!-- Quiz Controls -->
+            <div class="quiz-nav-row">
+              <button id="quizPrevBtn" class="btn btn-secondary btn-sm" disabled>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                <span>Назад</span>
+              </button>
+              <div class="quiz-nav-status" id="quizNavStatus">Выберите вариант ответа для продолжения</div>
+              <button id="quizNextBtn" class="btn btn-primary btn-sm" disabled>
+                <span>Далее</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Quiz Result Screen (Hidden by default) -->
+          <div id="quizResultScreen" class="quiz-result-screen" style="display: none;">
+            <div class="result-header">
+              <div class="result-trophy-badge">
+                <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="var(--accent-secondary)" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+              </div>
+              <h3 class="result-title">Профиль ваших сильных сторон</h3>
+              <p class="result-subtitle">Тест успешно завершен. Ниже представлен научно выверенный баланс ваших способностей.</p>
+            </div>
+
+            <!-- Dominant Talents Highlight Cards -->
+            <div class="dominant-talents-row" id="dominantTalentsRow">
+              <!-- Dynamically populated top 2-3 categories -->
+            </div>
+
+            <!-- Full Breakdown Chart / Bars -->
+            <div class="breakdown-card">
+              <h4>Полный спектр направленностей (в процентах):</h4>
+              <div class="bars-container" id="resultsBarsContainer">
+                <!-- Dynamically injected bars -->
+              </div>
+            </div>
+
+            <!-- Recommendations Block -->
+            <div class="recommendations-box" id="quizRecommendationsBox">
+              <!-- Dynamically injected customized advice -->
+            </div>
+
+            <!-- Result Actions -->
+            <div class="result-actions-row">
+              <button id="retakeQuizBtn" class="btn btn-secondary">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>
+                <span>Пройти тест заново</span>
+              </button>
+              <button id="copyResultsBtn" class="btn btn-primary">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span>Скопировать результат</span>
+              </button>
+              <button id="printResultsBtn" class="btn btn-secondary">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+                <span>Распечатать отчёт</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="section-bookmark-btn" data-target="quiz" title="Сохранить раздел в избранное" aria-label="Сохранить раздел Тест способностей">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+      </button>
+    </section>
+
+    <!-- 7. ТАЛАНТЫ И ПРОФЕССИИ -->
+    <section id="careers" class="section section-alt section-target" data-section-name="Таланты и профессии">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Раздел 06 • Профориентационный компас</div>
+          <h2 class="section-title">Таланты и профессии</h2>
+          <p class="section-subtitle">
+            Каждый талант находит воплощение в современных профессиях. Главный секрет успеха XXI века — синергия нескольких способностей в одном человеке.
+          </p>
+        </div>
+
+        <!-- Synergy Feature Interactive Box -->
+        <div class="synergy-interactive-tool">
+          <div class="synergy-tool-header">
+            <div class="tool-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            </div>
+            <div>
+              <h3>Интерактивный конструктор: Профессии на стыке талантов</h3>
+              <p>Выберите 2 вида таланта, чтобы увидеть, какие профессии будущего рождаются на их пересечении:</p>
+            </div>
+          </div>
+          <div class="synergy-selectors">
+            <div class="selector-col">
+              <label for="talentSelectA">Первый талант:</label>
+              <select id="talentSelectA" class="styled-select">
+                <option value="tech">Технический</option>
+                <option value="creative">Творческий</option>
+                <option value="intellect">Интеллектуальный</option>
+                <option value="comm">Коммуникативный</option>
+                <option value="leader">Лидерский</option>
+                <option value="social">Социальный</option>
+                <option value="lit">Литературный</option>
+                <option value="sci">Научно-исследовательский</option>
+              </select>
+            </div>
+            <div class="synergy-plus">+</div>
+            <div class="selector-col">
+              <label for="talentSelectB">Второй талант:</label>
+              <select id="talentSelectB" class="styled-select">
+                <option value="creative" selected>Творческий</option>
+                <option value="tech">Технический</option>
+                <option value="intellect">Интеллектуальный</option>
+                <option value="comm">Коммуникативный</option>
+                <option value="leader">Лидерский</option>
+                <option value="social">Социальный</option>
+                <option value="lit">Литературный</option>
+                <option value="sci">Научно-исследовательский</option>
+              </select>
+            </div>
+          </div>
+          <div class="synergy-result-box" id="synergyResultDisplay">
+            <!-- Dynamically populated hybrid careers -->
+          </div>
+        </div>
+
+        <!-- Base Careers Mapping Grid -->
+        <h3 class="subsection-title">Базовая матрица соответствия направлений</h3>
+        <div class="careers-matrix-grid">
+          <div class="career-card">
+            <div class="career-head">
+              <span class="career-type-tag tag-blue">Технический</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            </div>
+            <div class="career-professions">
+              <span class="prof-pill">Программист</span>
+              <span class="prof-pill">Инженер-робототехник</span>
+              <span class="prof-pill">Системный архитектор</span>
+              <span class="prof-pill">Специалист по кибербезопасности</span>
+              <span class="prof-pill">Конструктор БПЛА</span>
+            </div>
+            <p class="career-note">Фокус на логику систем, надежность кода и материальное воплощение идей.</p>
+          </div>
+
+          <div class="career-card">
+            <div class="career-head">
+              <span class="career-type-tag tag-purple">Творческий</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/></svg>
+            </div>
+            <div class="career-professions">
+              <span class="prof-pill">Графический дизайнер</span>
+              <span class="prof-pill">UX/UI-дизайнер</span>
+              <span class="prof-pill">Концепт-художник</span>
+              <span class="prof-pill">Арт-директор</span>
+              <span class="prof-pill">Режиссёр монтажа</span>
+            </div>
+            <p class="career-note">Фокус на визуальную эстетику, эмоциональное воздействие и эргономику.</p>
+          </div>
+
+          <div class="career-card">
+            <div class="career-head">
+              <span class="career-type-tag tag-indigo">Научно-исследовательский</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 2v7.31M14 2v7.31M8.5 2h7M14 9.3a6.5 6.5 0 1 1-4 0"/></svg>
+            </div>
+            <div class="career-professions">
+              <span class="prof-pill">Data Scientist</span>
+              <span class="prof-pill">Биоинженер-генетик</span>
+              <span class="prof-pill">Аналитик рынков</span>
+              <span class="prof-pill">Астрофизик</span>
+              <span class="prof-pill">Фармаколог</span>
+            </div>
+            <p class="career-note">Фокус на поиск первопричин, проверку теорий и расширение научного фронта.</p>
+          </div>
+
+          <div class="career-card">
+            <div class="career-head">
+              <span class="career-type-tag tag-teal">Коммуникативный</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </div>
+            <div class="career-professions">
+              <span class="prof-pill">Журналист / Интервьюер</span>
+              <span class="prof-pill">Педагог-новатор</span>
+              <span class="prof-pill">Менеджер по переговорам</span>
+              <span class="prof-pill">PR-стратег</span>
+              <span class="prof-pill">Медиатор споров</span>
+            </div>
+            <p class="career-note">Фокус на эмпатию, выстраивание доверительных сетей и передачу смыслов.</p>
+          </div>
+
+          <div class="career-card">
+            <div class="career-head">
+              <span class="career-type-tag tag-gold">Лидерский</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+            </div>
+            <div class="career-professions">
+              <span class="prof-pill">IT-предприниматель</span>
+              <span class="prof-pill">Руководитель проектов (PM)</span>
+              <span class="prof-pill">Кризис-менеджер</span>
+              <span class="prof-pill">Директор школы</span>
+              <span class="prof-pill">Организатор стартапов</span>
+            </div>
+            <p class="career-note">Фокус на принятие решений, сплочение команды и ведение к общему результату.</p>
+          </div>
+
+          <div class="career-card">
+            <div class="career-head">
+              <span class="career-type-tag tag-pink">Социальный</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            </div>
+            <div class="career-professions">
+              <span class="prof-pill">Врач-педиатр / Хирург</span>
+              <span class="prof-pill">Клинический психолог</span>
+              <span class="prof-pill">Куратор благотворительности</span>
+              <span class="prof-pill">Специалист по инклюзии</span>
+              <span class="prof-pill">Экоактивист</span>
+            </div>
+            <p class="career-note">Фокус на сострадание, защиту жизни и бескорыстную заботу об обществе.</p>
+          </div>
+
+          <div class="career-card">
+            <div class="career-head">
+              <span class="career-type-tag tag-amber">Литературный</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+            </div>
+            <div class="career-professions">
+              <span class="prof-pill">Писатель / Романист</span>
+              <span class="prof-pill">Сценарист игр и кино</span>
+              <span class="prof-pill">Главный редактор</span>
+              <span class="prof-pill">Литературный переводчик</span>
+              <span class="prof-pill">Контент-стратег</span>
+            </div>
+            <p class="career-note">Фокус на силу художественного слова, драматургию и богатство родной речи.</p>
+          </div>
+        </div>
+      </div>
+      <button class="section-bookmark-btn" data-target="careers" title="Сохранить раздел в избранное" aria-label="Сохранить раздел Таланты и профессии">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+      </button>
+    </section>
+
+    <!-- 8. КАК РАЗВИВАТЬ СВОЙ ТАЛАНТ? -->
+    <section id="development" class="section section-target" data-section-name="Как развивать талант?">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Раздел 07 • Практическое руководство</div>
+          <h2 class="section-title">Как развивать свой талант?</h2>
+          <p class="section-subtitle">
+            8 проверенных научно обоснованных принципов роста от осознанной практики до психологической независимости.
+          </p>
+        </div>
+
+        <div class="dev-rules-grid">
+          <div class="dev-rule-card">
+            <div class="rule-number">01</div>
+            <h3>Регулярная осознанная практика</h3>
+            <p>
+              Важно не просто количество часов, а качество погружения. 30 минут решения действительно трудных задач с максимальной концентрацией дают больше, чем 4 часа механического повторения.
+            </p>
+            <span class="rule-tag">Принцип нейропластичности</span>
+          </div>
+
+          <div class="dev-rule-card">
+            <div class="rule-number">02</div>
+            <h3>Не бояться ошибок</h3>
+            <p>
+              Ошибка — это не крушение, а единственная объективная точка роста. Каждый неверный ход в шахматах или сбой в программе учит мозг распознавать скрытые ограничения.
+            </p>
+            <span class="rule-tag">Установка на рост</span>
+          </div>
+
+          <div class="dev-rule-card">
+            <div class="rule-number">03</div>
+            <h3>Читать и изучать смежное</h3>
+            <p>
+              Глубокие идеи часто рождаются на стыке дисциплин. Программисту полезна теория цвета и психология, а литератору — основы логики и биология поведения.
+            </p>
+            <span class="rule-tag">Междисциплинарность</span>
+          </div>
+
+          <div class="dev-rule-card">
+            <div class="rule-number">04</div>
+            <h3>Искать наставников</h3>
+            <p>
+              Опытный учитель, научный руководитель или старший товарищ сэкономит вам годы блужданий, указав на «слепые зоны» и дав честную, конструктивную обратную связь.
+            </p>
+            <span class="rule-tag">Внешняя рефлексия</span>
+          </div>
+
+          <div class="dev-rule-card">
+            <div class="rule-number">05</div>
+            <h3>Участвовать в реальных проектах</h3>
+            <p>
+              Теория оживает, когда появляется ответственность за готовый продукт. Школьный сайт, олимпиада, исследовательский доклад или благотворительный сбор — лучший полигон.
+            </p>
+            <span class="rule-tag">Проектный подход</span>
+          </div>
+
+          <div class="dev-rule-card">
+            <div class="rule-number">06</div>
+            <h3>Пробовать разные направления</h3>
+            <p>
+              В 8 классе не нужно ограничивать себя одной узкой колеей. Попробуйте робототехнику, ораторское искусство, волейбол, журналистику. Лишь в сравнении познается истинное призвание.
+            </p>
+            <span class="rule-tag">Широта горизонта</span>
+          </div>
+
+          <div class="dev-rule-card">
+            <div class="rule-number">07</div>
+            <h3>Анализировать свои результаты</h3>
+            <p>
+              Ведите дневник побед и затруднений. Раз в месяц задавайте себе вопрос: «Что у меня стало получаться легче, чем 30 дней назад? В чем причина скачка?»
+            </p>
+            <span class="rule-tag">Метапознание</span>
+          </div>
+
+          <div class="dev-rule-card">
+            <div class="rule-number">08</div>
+            <h3>Не сравнивать себя с другими</h3>
+            <p>
+              У каждого человека своя стартовая черта, скорость развития и биологический ритм. Единственный честный критерий вашего прогресса — вы сами в сравнении со вчерашним днем.
+            </p>
+            <span class="rule-tag">Психологическая опора</span>
+          </div>
+        </div>
+
+        <!-- Interactive Habit Tracker -->
+        <div class="habits-checklist-box">
+          <div class="checklist-header">
+            <h3>Чек-лист привычек развития для ученика 8 класса</h3>
+            <p>Отмечайте привычки, которые вы уже практикуете (сохраняется в вашем браузере):</p>
+          </div>
+          <div class="checklist-items" id="habitsList">
+            <label class="check-item">
+              <input type="checkbox" data-habit-id="habit1">
+              <span class="checkmark"></span>
+              <span class="check-text">Выделяю минимум 30 минут в день на любимое дело без отвлечения на соцсети</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" data-habit-id="habit2">
+              <span class="checkmark"></span>
+              <span class="check-text">После неудачи анализирую причину вместо того, чтобы бросать занятие</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" data-habit-id="habit3">
+              <span class="checkmark"></span>
+              <span class="check-text">Регулярно читаю хотя бы одну научно-познавательную или развивающую книгу в месяц</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" data-habit-id="habit4">
+              <span class="checkmark"></span>
+              <span class="check-text">Задаю вопросы учителям и не стесняюсь просить совета, когда чего-то не понимаю</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" data-habit-id="habit5">
+              <span class="checkmark"></span>
+              <span class="check-text">Создаю реальные творческие работы (проекты, статьи, программы, рисунки), а не только учу правила</span>
+            </label>
+          </div>
+          <div class="checklist-progress-text" id="habitsProgressText">Выполнено 0 из 5 привычек</div>
+        </div>
+      </div>
+      <button class="section-bookmark-btn" data-target="development" title="Сохранить раздел в избранное" aria-label="Сохранить раздел Как развивать талант?">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+      </button>
+    </section>
+
+    <!-- 9. МИФЫ И ФАКТЫ О ТАЛАНТЕ -->
+    <section id="myths" class="section section-alt section-target" data-section-name="Мифы и факты">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Раздел 08 • Разрушение стереотипов</div>
+          <h2 class="section-title">Мифы и факты о таланте</h2>
+          <p class="section-subtitle">
+            Многие предрассудки мешают людям поверить в себя. Нажмите на карточку, чтобы узнать научное объяснение и реальные факты.
+          </p>
+        </div>
+
+        <div class="myths-grid" id="mythsContainer">
+
+          <!-- Myth 1 -->
+          <div class="myth-card" data-opened="false">
+            <div class="myth-header">
+              <div class="myth-status-tag tag-myth">МИФ 01</div>
+              <h3 class="myth-statement">«Талант — это исключительно врождённая способность, которую нельзя приобрести.»</h3>
+              <button class="myth-toggle-btn" aria-label="Развернуть факт">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+            </div>
+            <div class="myth-content">
+              <div class="fact-status-tag tag-fact">ФАКТ И НАУКА</div>
+              <p class="fact-text">
+                Генетика закладывает лишь <strong>задатки</strong> (строение анализаторов, пластичность синапсов, тип темперамента). Без правильного окружения, эмоционального стимула и тысяч часов практики задатки так и останутся нераскрытыми кодами в ДНК. Нейропластичность мозга позволяет развивать выдающиеся навыки в любом возрасте.
+              </p>
+            </div>
+          </div>
+
+          <!-- Myth 2 -->
+          <div class="myth-card" data-opened="false">
+            <div class="myth-header">
+              <div class="myth-status-tag tag-myth">МИФ 02</div>
+              <h3 class="myth-statement">«Если у человека нет врождённого таланта, он никогда ничего не добьётся.»</h3>
+              <button class="myth-toggle-btn" aria-label="Развернуть факт">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+            </div>
+            <div class="myth-content">
+              <div class="fact-status-tag tag-fact">ФАКТ И НАУКА</div>
+              <p class="fact-text">
+                Исследования психолога Андерса Эрикссона доказали, что <strong>упорство, целеустремленность и системная практика (deliberate practice)</strong> в 90% случаев превосходят «пассивную одаренность». Человек со средними начальными данными, работающий методично, стабильно обгоняет ленивого гения.
+              </p>
+            </div>
+          </div>
+
+          <!-- Myth 3 -->
+          <div class="myth-card" data-opened="false">
+            <div class="myth-header">
+              <div class="myth-status-tag tag-myth">МИФ 03</div>
+              <h3 class="myth-statement">«Талантливые люди никогда не ошибаются и схватывают всё легко.»</h3>
+              <button class="myth-toggle-btn" aria-label="Развернуть факт">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+            </div>
+            <div class="myth-content">
+              <div class="fact-status-tag tag-fact">ФАКТ И НАУКА</div>
+              <p class="fact-text">
+                Томас Эдисон провел более 1000 неудачных опытов, прежде чем создал рабочую лампу накаливания. Настоящий талант отличается не отсутствием ошибок, а <strong>высочайшей устойчивостью к неудачам</strong>: талантливый человек ошибается даже чаще других, потому что ставит перед собой принципиально более смелые задачи.
+              </p>
+            </div>
+          </div>
+
+          <!-- Myth 4 -->
+          <div class="myth-card" data-opened="false">
+            <div class="myth-header">
+              <div class="myth-status-tag tag-myth">МИФ 04</div>
+              <h3 class="myth-statement">«Талант можно и нужно развивать на протяжении всей жизни.»</h3>
+              <button class="myth-toggle-btn" aria-label="Развернуть факт">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+            </div>
+            <div class="myth-content">
+              <div class="fact-status-tag tag-fact">ЭТО ЧИСТАЯ ПРАВДА!</div>
+              <p class="fact-text">
+                Способности не консервируются. Если их не упражнять, нейронные ансамбли ослабевают («use it or lose it»). И наоборот: человек, продолжающий решать творческие и интеллектуальные задачи в 40, 60 и 80 лет, демонстрирует потрясающую ясность ума и рождает выдающиеся произведения.
+              </p>
+            </div>
+          </div>
+
+          <!-- Myth 5 -->
+          <div class="myth-card" data-opened="false">
+            <div class="myth-header">
+              <div class="myth-status-tag tag-myth">МИФ 05</div>
+              <h3 class="myth-statement">«У одного человека может быть только один узкий талант.»</h3>
+              <button class="myth-toggle-btn" aria-label="Развернуть факт">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+            </div>
+            <div class="myth-content">
+              <div class="fact-status-tag tag-fact">ФАКТ И НАУКА</div>
+              <p class="fact-text">
+                Человеческий мозг мультимодален. Михаил Ломоносов был одновременно великим физиком, химиком, поэтом, историком и создателем мозаик. Александр Бородин был выдающимся химиком-органиком и всемирно признанным композитором («Князь Игорь»). Разные таланты взаимно обогащают друг друга!
+              </p>
+            </div>
+          </div>
+
+          <!-- Myth 6 -->
+          <div class="myth-card" data-opened="false">
+            <div class="myth-header">
+              <div class="myth-status-tag tag-myth">МИФ 06</div>
+              <h3 class="myth-statement">«Если талант не проявился до 12 лет, поезд ушел.»</h3>
+              <button class="myth-toggle-btn" aria-label="Развернуть факт">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+            </div>
+            <div class="myth-content">
+              <div class="fact-status-tag tag-fact">ФАКТ И НАУКА</div>
+              <p class="fact-text">
+                Существует понятие <em>«позднего цветения» (late bloomers)</em>. Винсент Ван Гог взялся за живопись лишь в 27 лет, Поль Гоген был преуспевающим биржевым брокером до 35 лет, а писательница Джоан Роулинг опубликовала первую книгу о Гарри Поттере после 30. Подростковый возраст — это самое начало пути.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="section-bookmark-btn" data-target="myths" title="Сохранить раздел в избранное" aria-label="Сохранить раздел Мифы и факты">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+      </button>
+    </section>
+
+    <!-- 10. ПУТЬ ОТ ИНТЕРЕСА К МАСТЕРСТВУ -->
+    <section id="timeline" class="section section-target" data-section-name="Путь к мастерству">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Раздел 09 • Хронология становления</div>
+          <h2 class="section-title">Путь от интереса к мастерству</h2>
+          <p class="section-subtitle">
+            Интерактивная временная шкала личностного созревания: как пройти через сомнения и кризисы к подлинной виртуозности.
+          </p>
+        </div>
+
+        <div class="mastery-timeline">
+          <!-- Item 1 -->
+          <div class="timeline-node">
+            <div class="timeline-dot">1</div>
+            <div class="timeline-card">
+              <span class="timeline-stage">Фаза 1 • Пробуждение</span>
+              <h3 class="timeline-title">Интерес</h3>
+              <p class="timeline-desc">Случайное впечатление: прочитанная книга, вдохновляющее видео, увиденная работа мастера. Возникает искра: «Я тоже хочу попробовать!»</p>
+              <div class="timeline-status-pill">Психология: Восторг и любопытство</div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-node">
+            <div class="timeline-dot">2</div>
+            <div class="timeline-card">
+              <span class="timeline-stage">Фаза 2 • Первые шаги</span>
+              <h3 class="timeline-title">Первые попытки</h3>
+              <p class="timeline-desc">Первые неуклюжие линии рисунка, запуск первой строчки кода «Hello World», робкие удары по мячу. Всё кажется простым и веселым.</p>
+              <div class="timeline-status-pill">Психология: Начальный энтузиазм</div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-node danger-node">
+            <div class="timeline-dot">3</div>
+            <div class="timeline-card">
+              <span class="timeline-stage">Фаза 3 • Критическая точка</span>
+              <h3 class="timeline-title">Ошибки и трудности</h3>
+              <p class="timeline-desc">Так называемая «яма отчаяния»: простота закончилась, программа выдает баги, рисунок не совпадает с замыслом. 80% людей бросают дело здесь.</p>
+              <div class="timeline-status-pill danger-pill">Ловушка: Иллюзия бездарности</div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="timeline-node">
+            <div class="timeline-dot">4</div>
+            <div class="timeline-card">
+              <span class="timeline-stage">Фаза 4 • Закалка</span>
+              <h3 class="timeline-title">Практика</h3>
+              <p class="timeline-desc">Преодоление плато. Рутина становится осознанной. Человек учится работать не на одном лишь настроении, а опираясь на дисциплину и график.</p>
+              <div class="timeline-status-pill">Психология: Воля и терпение</div>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="timeline-node">
+            <div class="timeline-dot">5</div>
+            <div class="timeline-card">
+              <span class="timeline-stage">Фаза 5 • Качественный скачок</span>
+              <h3 class="timeline-title">Опыт</h3>
+              <p class="timeline-desc">Количество переходит в качество. Базовые алгоритмы выполняются «на автомате». Освобождаются ментальные ресурсы для стратегического мышления.</p>
+              <div class="timeline-status-pill">Психология: Осознанная компетентность</div>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="timeline-node">
+            <div class="timeline-dot">6</div>
+            <div class="timeline-card">
+              <span class="timeline-stage">Фаза 6 • Стабильность</span>
+              <h3 class="timeline-title">Уверенность</h3>
+              <p class="timeline-desc">Исчезает страх перед чистым листом или публичным выступлением. Человек точно знает свои сильные стороны и может гарантировать стабильный уровень.</p>
+              <div class="timeline-status-pill">Психология: Спокойная сила</div>
+            </div>
+          </div>
+
+          <!-- Item 7 -->
+          <div class="timeline-node success-node">
+            <div class="timeline-dot">7</div>
+            <div class="timeline-card">
+              <span class="timeline-stage">Фаза 7 • Вершина</span>
+              <h3 class="timeline-title">Мастерство</h3>
+              <p class="timeline-desc">Свободное творчество. Способность решать нерешаемые задачи, нарушать каноны ради создания новых направлений, обучать других и служить обществу.</p>
+              <div class="timeline-status-pill success-pill">Психология: Созидание и свобода</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="section-bookmark-btn" data-target="timeline" title="Сохранить раздел в избранное" aria-label="Сохранить раздел Путь к мастерству">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+      </button>
+    </section>
+
+    <!-- 11. ТАЛАНТ И ГЕРОИЗМ -->
+    <section id="heroism" class="section section-alt section-target" data-section-name="Талант и героизм">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Раздел 10 • Философский смысл темы</div>
+          <h2 class="section-title">Талант и героизм</h2>
+          <p class="section-subtitle">
+            Вторая грань нашей темы — «герой». Настоящий герой — это не персонаж комикса со сверхспособностями, а человек, нашедший мужество применить свой талант на благо мира.
+          </p>
+          <div class="key-quote-banner banner-accent">
+            <span class="quote-mark">«</span>
+            <p>Героизм проявляется тогда, когда человек использует свои способности не только для себя, но и для помощи другим.</p>
+            <span class="quote-mark">»</span>
+          </div>
+        </div>
+
+        <div class="heroism-grid">
+          <div class="heroism-card">
+            <div class="heroism-icon-badge color-pink">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+            </div>
+            <h3>Врач</h3>
+            <p class="heroism-talent-label">Талант: аналитика, эмпатия, хладнокровие</p>
+            <p class="heroism-desc">
+              Часами стоит у операционного стола, берет на себя груз ответственности за чужую жизнь и здоровье, не требуя оваций.
+            </p>
+          </div>
+
+          <div class="heroism-card">
+            <div class="heroism-icon-badge color-orange">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2c5 0 9 4 9 9 0 6-9 11-9 11S3 17 3 11c0-5 4-9 9-9z"></path><circle cx="12" cy="11" r="3"></circle></svg>
+            </div>
+            <h3>Спасатель МЧС</h3>
+            <p class="heroism-talent-label">Талант: кинестетика, самообладание, смелость</p>
+            <p class="heroism-desc">
+              Идет в огонь, ледяную воду или завалы ради спасения незнакомых людей, подчиняя инстинкт самосохранения гражданскому долгу.
+            </p>
+          </div>
+
+          <div class="heroism-card">
+            <div class="heroism-icon-badge color-blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+            </div>
+            <h3>Учитель</h3>
+            <p class="heroism-talent-label">Талант: коммуникация, педагогика, терпение</p>
+            <p class="heroism-desc">
+              Изо дня в день щедро делится знаниями, зажигает веру в неуверенных учениках и формирует будущее целой страны.
+            </p>
+          </div>
+
+          <div class="heroism-card">
+            <div class="heroism-icon-badge color-teal">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <h3>Волонтёр</h3>
+            <p class="heroism-talent-label">Талант: социальная чуткость, созидание</p>
+            <p class="heroism-desc">
+              Тратит свое свободное время на поддержку пожилых, спасение брошенных животных, посадку лесов и гуманитарные миссии.
+            </p>
+          </div>
+
+          <div class="heroism-card">
+            <div class="heroism-icon-badge color-gold">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            </div>
+            <h3>Инженер</h3>
+            <p class="heroism-talent-label">Талант: технический гений, изобретательность</p>
+            <p class="heroism-desc">
+              Создает системы очистки питьевой воды, безопасные мосты, бионические протезы для людей с инвалидностью и экологичные энергосети.
+            </p>
+          </div>
+
+          <div class="heroism-card">
+            <div class="heroism-icon-badge color-cyan">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <h3>Программист</h3>
+            <p class="heroism-talent-label">Талант: алгоритмическое мышление, архитектура</p>
+            <p class="heroism-desc">
+              Разрабатывает системы ранней диагностики заболеваний с помощью ИИ, приложения для незрячих людей и платформы открытого образования.
+            </p>
+          </div>
+
+          <div class="heroism-card highlight-heroism">
+            <div class="heroism-icon-badge color-indigo">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <h3>Обычный школьник</h3>
+            <p class="heroism-talent-label">Талант: честность, сострадание, лидерство</p>
+            <p class="heroism-desc">
+              Заступиться за того, кого обижают в классе; бескорыстно объяснить сложную тему однокласснику; организовать уборку школьного сквера. Маленький поступок — начало большого героя.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="section-bookmark-btn" data-target="heroism" title="Сохранить раздел в избранное" aria-label="Сохранить раздел Талант и героизм">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+      </button>
+    </section>
+
+    <!-- 12. ТАЛАНТ И ОБЩЕСТВО -->
+    <section id="society" class="section section-target" data-section-name="Талант и общество">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Раздел 11 • Социальная гармония</div>
+          <h2 class="section-title">Талант и общество</h2>
+          <p class="section-subtitle">
+            Человеческая цивилизация — это не монолог одного гения, а симфония миллионов разнообразных способностей, дополняющих друг друга.
+          </p>
+        </div>
+
+        <div class="society-symphony-grid">
+          <div class="symphony-item">
+            <div class="symphony-icon-box color-indigo">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 2v7.31M14 2v7.31M8.5 2h7M14 9.3a6.5 6.5 0 1 1-4 0"/></svg>
+            </div>
+            <h4>Учёные</h4>
+            <p>Создают фундаментальное знание, разгадывают тайны природы и обеспечивают технологический прогресс.</p>
+          </div>
+          <div class="symphony-item">
+            <div class="symphony-icon-box color-pink">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+            </div>
+            <h4>Врачи</h4>
+            <p>Оберегают физическое здоровье человечества и возвращают людям возможность жить и творить.</p>
+          </div>
+          <div class="symphony-item">
+            <div class="symphony-icon-box color-cyan">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20h20M5 20V8l7-5 7 5v12M9 12h6"/></svg>
+            </div>
+            <h4>Инженеры</h4>
+            <p>Превращают абстрактные законы физики в дороги, города, самолёты и надежные механизмы.</p>
+          </div>
+          <div class="symphony-item">
+            <div class="symphony-icon-box color-purple">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+            </div>
+            <h4>Деятели культуры</h4>
+            <p>Хранят духовные ценности, развивают родной язык, обогащают внутренний мир человека красотой и смыслом.</p>
+          </div>
+          <div class="symphony-item">
+            <div class="symphony-icon-box color-amber">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+            </div>
+            <h4>Учителя</h4>
+            <p>Связывают поколения, передают культуру и открывают таланты в каждом новом поколении школьников.</p>
+          </div>
+          <div class="symphony-item">
+            <div class="symphony-icon-box color-blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </div>
+            <h4>IT-разработчики</h4>
+            <p>Создают цифровую инфраструктуру, стирая границы для общения, науки и глобального сотрудничества.</p>
+          </div>
+        </div>
+
+        <div class="society-insight-box">
+          <div class="insight-badge">Глубокая мысль</div>
+          <p>
+            Если бы все люди обладали исключительно математическим талантом, у нас не было бы литературы и музыки. Если бы все были художниками, некому было бы строить мосты и лечить болезни. <strong>Сила общества — именно в многообразии талантов.</strong>
+          </p>
+        </div>
+      </div>
+      <button class="section-bookmark-btn" data-target="society" title="Сохранить раздел в избранное" aria-label="Сохранить раздел Талант и общество">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+      </button>
+    </section>
+
+    <!-- 13. ЕСЛИ Я ЕЩЁ НЕ НАШЁЛ СВОЙ ТАЛАНТ? -->
+    <section id="search" class="section section-alt section-target" data-section-name="Если талант не найден">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Раздел 12 • Мотивация и поддержка</div>
+          <h2 class="section-title">Если я ещё не нашёл свой талант?</h2>
+          <p class="section-subtitle">
+            Откровенный разговор со сверстником без назиданий и ложного пафоса.
+          </p>
+        </div>
+
+        <div class="not-found-card">
+          <div class="not-found-banner">
+            <div class="quote-huge-badge">
+              <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="var(--accent-secondary)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h3>Не найти свой талант в 14–15 лет — это абсолютно нормально!</h3>
+            <p>
+              В 8 классе ваш мозг проходит колоссальную перестройку. Мир огромен, и вы ещё не успели прикоснуться даже к 1% существующих профессий, наук и ремесел.
+            </p>
+          </div>
+
+          <div class="steps-to-find-grid">
+            <div class="find-step">
+              <span class="find-num">1</span>
+              <h4>Разрешите себе быть новичком</h4>
+              <p>Не требуйте от себя гениальности с первого дня. Первый блин всегда комом — это естественный закон обучения.</p>
+            </div>
+            <div class="find-step">
+              <span class="find-num">2</span>
+              <h4>Наблюдайте за «потоком»</h4>
+              <p>Обратите внимание, за каким занятием вы забываете проверить телефон и не замечаете, как летит время.</p>
+            </div>
+            <div class="find-step">
+              <span class="find-num">3</span>
+              <h4>Коллекционируйте опыт</h4>
+              <p>Сходите на открытый урок по астрономии, запишитесь в секцию дебатов, попробуйте написать бота или испечь пирог.</p>
+            </div>
+            <div class="find-step">
+              <span class="find-num">4</span>
+              <h4>Спросите окружающих</h4>
+              <p>Иногда со стороны виднее: спросите друзей или родителей, в каких ситуациях они чаще всего обращаются к вам за советом.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="section-bookmark-btn" data-target="search" title="Сохранить раздел в избранное" aria-label="Сохранить раздел Если талант не найден">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+      </button>
+    </section>
+
+    <!-- 14. МОЙ ПРИМЕР (БЛОК АВТОРА ПРОЕКТА) -->
+    <section id="author" class="section section-target" data-section-name="Мой пример">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">Раздел 13 • Личный опыт автора</div>
+          <h2 class="section-title">Мой пример</h2>
+          <p class="section-subtitle">
+            Взгляд ученика 8 класса: как этот проект помог мне осознать собственные сильные стороны.
+          </p>
+        </div>
+
+        <div class="author-block">
+          <div class="author-card">
+            <div class="author-header-row">
+              <div class="author-avatar">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+              </div>
+              <div class="author-info">
+                <h3 id="authorNameDisplay" class="author-name">Автор проекта • Ученик 8 класса</h3>
+                <span class="author-school">Школьный исследовательский проект по русскому языку и литературе</span>
+              </div>
+              <button id="editAuthorBtn" class="btn btn-secondary btn-sm" title="Редактировать текст от первого лица">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                <span>Редактировать</span>
+              </button>
+            </div>
+
+            <!-- Author Content (Editable in Browser and LocalStorage) -->
+            <div class="author-text-container" id="authorTextContainer">
+              <div id="authorTextContent" class="author-text-content">
+                <p>
+                  Работая над проектом <strong>«Маленький гений и герой: талант есть у каждого»</strong>, я решил проанализировать и собственные склонности.
+                </p>
+                <p>
+                  Меня всегда привлекали современные цифровые технологии, программирование, алгоритмы и архитектура веб-интерфейсов. Однако в процессе создания этого сайта я понял, что чистой технической базы недостаточно: чтобы проект стал по-настоящему понятным и красивым, необходимо задействовать <em>творческое воображение, литературное чувство слова и эмпатию к читателю</em>.
+                </p>
+                <p>
+                  Таким образом, мои сильные стороны находятся на стыке <strong>технического мышления и творческого созидания</strong>. Создание этого интерактивного образовательного портала с 3D-графикой и структурированным психологическим материалом стало для меня личным примером того, как интерес перерастает в практику, преодолевает ошибки кода и воплощается в реальный общественно полезный результат.
+                </p>
+              </div>
+
+              <!-- Author Edit Form (hidden by default) -->
+              <div id="authorEditForm" class="author-edit-form" style="display: none;">
+                <label for="authorNameInput">Имя / Класс автора:</label>
+                <input type="text" id="authorNameInput" class="styled-input" value="Автор проекта • Ученик 8 класса">
+
+                <label for="authorTextInput">Текст личного примера:</label>
+                <textarea id="authorTextInput" class="styled-textarea" rows="6"></textarea>
+
+                <div class="edit-form-buttons">
+                  <button id="saveAuthorBtn" class="btn btn-primary btn-sm">Сохранить изменения</button>
+                  <button id="cancelAuthorBtn" class="btn btn-secondary btn-sm">Отмена</button>
+                  <button id="resetAuthorBtn" class="btn-text btn-sm">Сбросить по умолчанию</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="author-badges-row">
+              <span class="author-badge-pill">💻 Технические навыки</span>
+              <span class="author-badge-pill">🎨 Творческий дизайн</span>
+              <span class="author-badge-pill">📝 Русский язык и смыслы</span>
+              <span class="author-badge-pill">🤝 Образовательная польза</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="section-bookmark-btn" data-target="author" title="Сохранить раздел в избранное" aria-label="Сохранить раздел Мой пример">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+      </button>
+    </section>
+
+    <!-- CONCLUSION / SUMMARY CARD -->
+    <section class="section section-conclusion">
+      <div class="container">
+        <div class="final-manifesto-card">
+          <div class="manifesto-badge">Главный вывод проекта</div>
+          <h2 class="manifesto-title">«У каждого человека есть свои сильные стороны. Главное — заметить их, развивать и использовать с пользой.»</h2>
+          <p class="manifesto-desc">
+            Быть героем — значит не ждать аплодисментов, а каждый день делать мир немного лучше с помощью того дара, который есть внутри вас.
+          </p>
+          <div class="manifesto-actions">
+            <a href="#quiz" class="btn btn-primary">Узнать свои сильные стороны</a>
+            <a href="#hero" class="btn btn-secondary">Вернуться в начало</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-col footer-brand">
+        <div class="footer-logo">
+          <span class="brand-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </span>
+          <span class="brand-title">Маленький гений и герой</span>
+        </div>
+        <p class="footer-desc">
+          Образовательный творческий проект по русскому языку для 8 класса. Исследование природы одаренности, человеческого потенциала и созидательного труда.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Быстрая навигация</h4>
+        <ul class="footer-links">
+          <li><a href="#about">Что такое талант?</a></li>
+          <li><a href="#process">Формирование способностей</a></li>
+          <li><a href="#types">10 видов таланта</a></li>
+          <li><a href="#people">Примеры великих людей</a></li>
+          <li><a href="#quiz">Интерактивный тест</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Смысловые блоки</h4>
+        <ul class="footer-links">
+          <li><a href="#careers">Таланты и профессии</a></li>
+          <li><a href="#development">Как развивать талант</a></li>
+          <li><a href="#myths">Мифы и факты</a></li>
+          <li><a href="#heroism">Талант и героизм</a></li>
+          <li><a href="#author">Мой личный пример</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-info">
+        <h4 class="footer-heading">О проекте</h4>
+        <p class="footer-meta">Сайт работает полностью локально без внешних баз данных. Все данные тестов и заметок хранятся в вашем браузере.</p>
+        <div class="footer-badge">8 класс • Проектный день</div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <span>© 2026 Школьный проект по русскому языку «Талант есть у каждого».</span>
+        <span>Образовательная платформа для школьников и учителей.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll To Top Floating Button -->
+  <button id="scrollToTopBtn" class="scroll-top-btn" title="Вернуться наверх" aria-label="Прокрутить страницу наверх">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+  <!-- Notification Toast -->
+  <div id="toastNotification" class="toast-notification" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
